@@ -39,3 +39,10 @@
 * [JSON Web Token - JWT](https://jwt.io/)
 * [JWT - Wikipedia](https://en.wikipedia.org/wiki/JSON_Web_Token)
 * [Web API security](https://en.wikipedia.org/wiki/Web_API_security)
+* [Security Best Practices](https://stormpath.com/blog/secure-your-rest-api-right-way)
+* [OWASP API Security Project](https://www.owasp.org/index.php/OWASP_API_Security_Project)
+* [API security risks](https://apifriends.com/2017/08/03/rest-api-security/)
+* [Security Cheat sheet](https://www.owasp.org/index.php/REST_Security_Cheat_Sheet)
+* [API security incidents](https://www.programmableweb.com/news/recent-api-security-incidents-show-perils-ignoring-best-practices/analysis/2017/10/17)
+
+# Throttling / rate limiting
