@@ -46,3 +46,7 @@
 * [API security incidents](https://www.programmableweb.com/news/recent-api-security-incidents-show-perils-ignoring-best-practices/analysis/2017/10/17)
 
 # Throttling / rate limiting
+
+# Tools (testing)
+* Postman
+* Selenium
