@@ -20,3 +20,9 @@ CREATE TABLE talks (
     talk_date VARCHAR NOT NULL,
     PRIMARY KEY uuid
 );
+
+CREATE TABLE sessions (
+    session_id VARCHAR NOT NULL,
+    username VARCHAR NOT NULL,
+    expires VARCHAR NOT NULL
+);

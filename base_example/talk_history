@@ -7,39 +7,54 @@ use warnings;
 
 use Mojolicious::Lite;
 use Mojo::JWT;
+use DBI;
 
-get '/'      => 'login';
+plugin JSONConfig => { file => app->home->rel_file( 'conf/talk_history.json' ) };
+
+get '/' => sub {
+    my $c = shift;
+
+    my $session_ok = $c->check_session;
+
+    my $target = $session_ok ? '/login' : '/events';
+    return $c->redirect_to( $c->url_for($target) );
+};
+
 get '/login' => 'login';
 
-post '/login' => 
+post '/login' => sub {
+    my $c = shift;
+
+    my $login = $c->login;
+    my $target = $login ? '/events' : '/login';
+
+    return $c->redirect_to( $c->url_for( $target ) );
+};
 
 under '/' => sub {
     my ($c) = shift;
 
-    my $jwt = $c->param('jwt');
-    return $c->redirect_to( $c->url_for('/login') ) if !$jwt;
-    
+    my $session_ok = $c->check_session;
+
+    my $target = $session_ok ? '/login' : '/events';
+    return $target;
 };
 
-get '/events' => 'events';
-get '/event/:id'  => sub {
-};
+get '/events'                => 'events';
+get '/talks'                 => 'talks';
+get '/event/:id'             => 'event';
+get '/event/:event_id/talks' => 'talks';
+get '/talk/:talk_id'         => 'talk';
 
-get '/events/new'  => 'event_new';
+
 post '/events/new' => sub {
-};
+    my $c = shift;
 
-get '/event/:id/talks' => sub {
-};
+    # validate user input
 
-get '/event/:id/talk' => sub {
-};
-
-get '/events/:id/talks/new' => 'talk_new';
+    my $uuid = $c->save_event;
 };
 
 post '/events/:id/talks/new' => sub {
-];
-
-get '/talks' => sub {
 };
+
