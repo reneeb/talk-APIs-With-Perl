@@ -1,0 +1,45 @@
+#!/usr/bin/env perl
+
+use v5.20;
+
+use strict;
+use warnings;
+
+use Mojolicious::Lite;
+use Mojo::JWT;
+
+get '/'      => 'login';
+get '/login' => 'login';
+
+post '/login' => 
+
+under '/' => sub {
+    my ($c) = shift;
+
+    my $jwt = $c->param('jwt');
+    return $c->redirect_to( $c->url_for('/login') ) if !$jwt;
+    
+};
+
+get '/events' => 'events';
+get '/event/:id'  => sub {
+};
+
+get '/events/new'  => 'event_new';
+post '/events/new' => sub {
+};
+
+get '/event/:id/talks' => sub {
+};
+
+get '/event/:id/talk' => sub {
+};
+
+get '/events/:id/talks/new' => 'talk_new';
+};
+
+post '/events/:id/talks/new' => sub {
+];
+
+get '/talks' => sub {
+};
