@@ -105,7 +105,15 @@ sub register {
 
         my $session_id;
         while ( my ($id) = $sth->fetchrow_array ) {
+            $session_id = $id;
         }
+
+        my $sql_update = q~
+            UPDATE sessions
+            SET expires = NOW() + 1200
+            WHERE session_id = ?
+        ~;
+        $c->db->do( $sql_update );
 
         return 1 if $session_id;
         return 0;
