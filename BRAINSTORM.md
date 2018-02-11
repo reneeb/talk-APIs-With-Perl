@@ -18,11 +18,24 @@
 ### OData
 ### Swagger
 ### Handcrafted REST
+### different kinds of REST
 
 ## GraphQL
+* where does it comes from?
+* how does it looks like
+  * A request
+  * in the backend
+
+## REST vs. GraphQL
+* pros and cons
+  * development tools
+  * Number of requests / size of data
+  * Flexibility
 
 ## Mojolicious
 * Plugins
+  * Mojolicious::Plugin::OpenAPI
+  * Mojolicious::Plugin::GraphQL
 
 ## Security
 * How can one secure the API? Pros and cons of some mechanisms.
