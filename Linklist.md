@@ -28,6 +28,7 @@
 * [Give it a REST: Use GraphQL for your APIs](https://medium.freecodecamp.org/give-it-a-rest-use-graphql-for-your-apis-40a2761e6336)
 * [GraphQL vs REST: Things to Consider](https://www.infoq.com/news/2017/07/graphql-vs-rest)
 * [Is GraphQL The End of REST Style APIs?](https://nordicapis.com/is-graphql-the-end-of-rest-style-apis/)
+* [GraphQL vs REST: Overview](https://philsturgeon.uk/api/2017/01/24/graphql-vs-rest-overview/)
 
 # Swagger
 * [Swagger](https://swagger.io/)
