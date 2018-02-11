@@ -20,6 +20,15 @@
 * [GraphQL and Authentication](https://medium.com/the-graphqlhub/graphql-and-authentication-b73aed34bbeb)
 * [GraphQL Podcast](https://graphqlradio.com/)
 
+# REST vs. GraphQL
+* [GraphQL vs. REST - Two ways to send data over HTTP: What's the difference?](https://dev-blog.apollodata.com/graphql-vs-rest-5d425123e34b)
+* [GraphQL is the better REST](https://www.howtographql.com/basics/1-graphql-is-the-better-rest/)
+* [REST versus GraphQL](https://blog.pusher.com/rest-versus-graphql/)
+* [REST APIs are REST-in-Peace APIs. Long live GraphQL](https://medium.freecodecamp.org/rest-apis-are-rest-in-peace-apis-long-live-graphql-d412e559d8e4)
+* [Give it a REST: Use GraphQL for your APIs](https://medium.freecodecamp.org/give-it-a-rest-use-graphql-for-your-apis-40a2761e6336)
+* [GraphQL vs REST: Things to Consider](https://www.infoq.com/news/2017/07/graphql-vs-rest)
+* [Is GraphQL The End of REST Style APIs?](https://nordicapis.com/is-graphql-the-end-of-rest-style-apis/)
+
 # Swagger
 * [Swagger](https://swagger.io/)
 * [Swagger UI](https://swagger.io/swagger-ui/)
@@ -50,3 +59,5 @@
 # Tools (testing)
 * Postman
 * Selenium
+* GraphiQL
+* Swagger-UI
