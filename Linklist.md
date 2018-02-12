@@ -19,6 +19,8 @@
 * [Combining multiple GraphQL APIs](https://www.apollographql.com/docs/graphql-tools/schema-stitching.html)
 * [GraphQL and Authentication](https://medium.com/the-graphqlhub/graphql-and-authentication-b73aed34bbeb)
 * [GraphQL Podcast](https://graphqlradio.com/)
+* [What are the biggest Pain Points in Using GraphQL (Quora)](https://www.quora.com/What-are-the-biggest-pain-points-in-using-graphql)
+* [Pain Points of GraphQL](https://labs.getninjas.com.br/pain-points-of-graphql-7e83ba5ddef7)
 
 # REST vs. GraphQL
 * [GraphQL vs. REST - Two ways to send data over HTTP: What's the difference?](https://dev-blog.apollodata.com/graphql-vs-rest-5d425123e34b)
@@ -62,3 +64,6 @@
 * Selenium
 * GraphiQL
 * Swagger-UI
+
+# Misc
+* [Sharing Data in a Microservices Architecture using GraphQL](https://labs.getninjas.com.br/sharing-data-in-a-microservices-architecture-using-graphql-97db59357602)
