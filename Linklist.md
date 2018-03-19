@@ -4,6 +4,7 @@
 * [Representational State Transfer](https://de.wikipedia.org/wiki/Representational_State_Transfer)
 * [API Design: Ruminating Over REST](https://apigee.com/about/blog/api-technology/api-design-ruminating-over-rest)
 * [API Design: Honing in on HATEOAS](https://apigee.com/about/blog/api-technology/api-design-honing-hateoas)
+* [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)
 
 # OData
 * http://www.odata.org/
