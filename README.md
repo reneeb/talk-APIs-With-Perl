@@ -24,11 +24,54 @@ Many years ago SOAP was the way to go. And there were other types of API, too. B
 
 ## REST
 
+REST is the abbreviation for *REpresentational State Transfer*. This term was introduced in 2000 by Roy Fielding in his dissertation.
+
+REST describes a set architectural principles that can be used to design webservices. It focuses on how a resource is addressed an how the state of a resource can be changed. Roy fielding defined six principles for REST.
+
+### six principles of REST
+
+#### Client-server architecture
+
+The first principle of REST is easy. Every webpage uses a client-server architecture: The browser is the client and the webpage is on the server.
+
+This won't change when we change our application.
+
+#### Statelessness
+
+#### Cacheability
+
+The server should add information to the response if it is cacheable or not. And the client should cache cacheable responses to avoid superfluous requests. That leads to scaleable web applications.
+
+#### Layered system
+
+#### Code on demand (optional)
+
+#### Uniform interface
+
+### RESTful vs RESTish
+
+#### Richardson Maturity Model
+
+#### HATEOAS
+
+##### JSON:API
+
+### OData
+
+### Swagger
+
+#### Tools
+
+#### Mojolicious
+
+### The application
+
+Now we want to update our application. We want to make it accessible for various clients. Currently we only support software that can display a HTML page. We want to open the application to the world. Other applications should be able to access the information
+
+But we 
+
 ## GraphQL
 
 ## REST vs. GraphQL
 
 ## Moving the application forward
-
-
-
