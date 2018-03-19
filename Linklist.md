@@ -2,6 +2,8 @@
 * [REST API Tutorial](http://www.restapitutorial.com/lessons/whatisrest.html)
 * [Introduction to REST APIs](http://idratherbewriting.com/learnapidoc/docapis_introtoapis.html)
 * [Representational State Transfer](https://de.wikipedia.org/wiki/Representational_State_Transfer)
+* [API Design: Ruminating Over REST](https://apigee.com/about/blog/api-technology/api-design-ruminating-over-rest)
+* [API Design: Honing in on HATEOAS](https://apigee.com/about/blog/api-technology/api-design-honing-hateoas)
 
 # OData
 * http://www.odata.org/
