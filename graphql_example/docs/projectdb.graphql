@@ -1,0 +1,117 @@
+type Contacts {
+  address: String
+  contact_id: Int!
+  contact_name: String!
+  email: String
+  mobile: String
+  phone: String
+  project_contacts: [ProjectContacts]
+}
+
+input ContactsCreateInput {
+  address: String
+  contact_name: String!
+  email: String
+  mobile: String
+  phone: String
+}
+
+input ContactsMutateInput {
+  address: String
+  contact_id: Int!
+  contact_name: String
+  email: String
+  mobile: String
+  phone: String
+}
+
+input ContactsSearchInput {
+  address: String
+  contact_name: String
+  email: String
+  mobile: String
+  phone: String
+}
+
+type Mutation {
+  createContacts(input: [ContactsCreateInput!]!): [Contacts]
+  createProject(input: [ProjectCreateInput!]!): [Project]
+  createProjectContacts(input: [ProjectContactsCreateInput!]!): [ProjectContacts]
+  deleteContacts(input: [ContactsMutateInput!]!): [Boolean]
+  deleteProject(input: [ProjectMutateInput!]!): [Boolean]
+  deleteProjectContacts(input: [ProjectContactsMutateInput!]!): [Boolean]
+  updateContacts(input: [ContactsMutateInput!]!): [Contacts]
+  updateProject(input: [ProjectMutateInput!]!): [Project]
+  updateProjectContacts(input: [ProjectContactsMutateInput!]!): [ProjectContacts]
+}
+
+type Project {
+  abbreviation: String!
+  description: String
+  end_date: DateTime
+  id: Int!
+  project_contacts: [ProjectContacts]
+  projectnumber: String!
+  shortname: String!
+  start_date: DateTime!
+}
+
+type ProjectContacts {
+  contact_id: Int!
+  contacts: Contacts
+  project: Project
+  project_id: Int!
+}
+
+input ProjectContactsCreateInput {
+  contact_id: Int!
+  project_id: Int!
+}
+
+input ProjectContactsMutateInput {
+  contact_id: Int!
+  project_id: Int!
+}
+
+input ProjectContactsSearchInput {
+}
+
+input ProjectCreateInput {
+  abbreviation: String!
+  description: String
+  end_date: DateTime
+  projectnumber: String!
+  shortname: String!
+  start_date: DateTime!
+}
+
+input ProjectMutateInput {
+  abbreviation: String
+  description: String
+  end_date: DateTime
+  id: Int!
+  projectnumber: String
+  shortname: String
+  start_date: DateTime
+}
+
+input ProjectSearchInput {
+  abbreviation: String
+  description: String
+  end_date: DateTime
+  projectnumber: String
+  shortname: String
+  start_date: DateTime
+}
+
+type Query {
+  contacts(contact_id: [Int!]!): [Contacts]
+  project(id: [Int!]!): [Project]
+  projectContacts(contact_id: [Int!]!, project_id: [Int!]!): [ProjectContacts]
+  # input to search
+  searchContacts(input: ContactsSearchInput!): [Contacts]
+  # input to search
+  searchProject(input: ProjectSearchInput!): [Project]
+  # input to search
+  searchProjectContacts(input: ProjectContactsSearchInput!): [ProjectContacts]
+}
